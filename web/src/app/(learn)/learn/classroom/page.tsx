@@ -21,9 +21,9 @@ export default function ClassroomPage() {
       </LearnPageHeader>
 
       <p className="max-w-3xl text-sm text-ql-on-surface-variant">
-        Quantum Global Group uses partner platforms and open resources — including IBM Quantum Classroom
-        Accounts where applicable — so cohorts can run on real hardware without student credit cards.
-        Partner names appear on resources they provide; the learning journey is owned by Quantum Global Group.
+        Quantum Global Group uses partner platforms and open resources so cohorts can learn
+        hands-on fundamentals. Partner names appear only on resources they actually provide;
+        the learning journey is owned by Quantum Global Group.
       </p>
 
       <section className="space-y-4">

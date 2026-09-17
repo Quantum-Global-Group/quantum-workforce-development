@@ -97,21 +97,11 @@ a:hover { color: var(--ibm-blue-hover); text-decoration: underline; }
   line-height: 1.6;
 }
 
-/* ---------------- IBM "bird" watermarks + ecosystem scene backdrops ---------------- */
+/* IBM hardware bird watermarks disabled — QGG public identity */
 .bird-bg { position: relative; isolation: isolate; overflow: hidden; }
 .bird-bg::after {
-  content: "";
-  position: absolute;
-  top: clamp(7rem, 24%, 19rem);
-  transform: translateY(-50%);
-  width: clamp(320px, 42vw, 720px);
-  aspect-ratio: 1 / 1;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  opacity: 0.26;
-  pointer-events: none;
-  z-index: -1;
+  content: none;
+  display: none;
 }
 .bird-bg--right::after { right: -5%; }
 .bird-bg--left::after { left: -5%; }
