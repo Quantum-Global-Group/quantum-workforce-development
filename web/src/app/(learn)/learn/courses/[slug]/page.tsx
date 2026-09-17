@@ -111,7 +111,7 @@ export default async function CoursePage({
             href="/learn/readiness"
             className="inline-block rounded-lg border border-ql-outline-variant px-5 py-2.5 text-sm font-medium text-ql-on-surface no-underline"
           >
-            WISER Readiness Track
+            Quantum Readiness Track
           </Link>
         </div>
       ) : null}

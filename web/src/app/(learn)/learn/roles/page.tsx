@@ -24,7 +24,7 @@ export default function RolesPage() {
           </a>{" "}
           (or the{" "}
           <Link href="/learn/readiness" className="text-ql-primary">
-            WISER Readiness Track
+            Quantum Readiness Track
           </Link>
           ) if you do not yet know which family is yours.
         </p>

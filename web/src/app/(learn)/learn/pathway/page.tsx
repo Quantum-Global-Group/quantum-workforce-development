@@ -91,7 +91,7 @@ export default function PathwayPage() {
         </a>
         {" · "}
         <Link href="/learn/readiness" className="text-ql-primary">
-          WISER Readiness Track
+          Quantum Readiness Track
         </Link>
         {" · "}
         <Link href="/learn/roles" className="text-ql-primary">
