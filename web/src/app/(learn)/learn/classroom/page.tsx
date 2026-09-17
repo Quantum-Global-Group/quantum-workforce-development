@@ -26,6 +26,21 @@ export default function ClassroomPage() {
         the learning journey is owned by Quantum Global Group.
       </p>
 
+      <section className="rounded-2xl border border-ql-primary/35 bg-ql-surface-low p-6 sm:p-8">
+        <SectionHeader
+          title="Run on real hardware"
+          description="QUANTUM GLOBAL GROUP provides IBM Quantum Classroom Account access for the cohort — Open Plan QPU time, no student credit card. There is no public invite link: request access with your email and we will add you. If you are already on the account, sign in to the platform."
+        />
+        <div className="mt-6 flex flex-wrap gap-3">
+          <LearnButton href="https://www.quantumglobalgroup.io/#contact" variant="primary">
+            Request hardware access
+          </LearnButton>
+          <LearnButton href="https://quantum.cloud.ibm.com/" variant="secondary" external>
+            Sign in to Platform
+          </LearnButton>
+        </div>
+      </section>
+
       <section className="space-y-4">
         <SectionHeader
           title="Quantum for the Qulture"
