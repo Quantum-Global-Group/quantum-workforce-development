@@ -31,17 +31,17 @@
 /* Warm charcoal ramp — mirrors light mode's stone steps (soft, not pure black / cold blue-gray).
  * Upgraded: richer depth, softer borders, more vibrant accents, subtle surface hierarchy. */
 .dark {
-  --ql-canvas: #0b0a08;
-  --ql-surface: #141210;
-  --ql-surface-low: #1c1a17;
-  --ql-surface-container: #221f1c;
-  --ql-surface-high: #2a2724;
-  --ql-surface-highest: #33302c;
-  --ql-surface-lowest: #0b0a08;
-  --ql-primary: #00e6b8;
-  --ql-primary-container: #00c49d;
-  --ql-tertiary: #34d399;
-  --ql-tertiary-container: #059669;
+  --ql-canvas: #06080f;
+  --ql-surface: #0c1019;
+  --ql-surface-low: #121826;
+  --ql-surface-container: #1a2233;
+  --ql-surface-high: #222c40;
+  --ql-surface-highest: #2a3548;
+  --ql-surface-lowest: #04060a;
+  --ql-primary: #4d6bff;
+  --ql-primary-container: #3d56d9;
+  --ql-tertiary: #22c55e;
+  --ql-tertiary-container: #16a34a;
   --ql-on-surface: #f0ede8;
   --ql-on-surface-variant: #b5b0a8;
   --ql-outline: #8a847c;

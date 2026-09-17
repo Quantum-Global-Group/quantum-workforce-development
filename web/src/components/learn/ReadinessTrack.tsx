@@ -79,8 +79,34 @@ export default function ReadinessTrack() {
     }
   };
 
+  const answeredCount = READINESS_QUESTIONS.filter(
+    (q) => (answers[q.id] ?? []).length > 0
+  ).length;
+  const progressPct = Math.round((answeredCount / READINESS_QUESTIONS.length) * 100);
+
   return (
     <div className="space-y-8">
+      <div className="rounded-xl border border-ql-outline-variant bg-ql-surface-low p-4">
+        <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-ql-on-surface-variant">
+          <span>
+            Progress: {answeredCount} of {READINESS_QUESTIONS.length} questions
+          </span>
+          <span className="font-mono text-xs">{progressPct}%</span>
+        </div>
+        <div
+          className="mt-3 h-2 overflow-hidden rounded-full bg-ql-surface-container"
+          role="progressbar"
+          aria-valuenow={progressPct}
+          aria-valuemin={0}
+          aria-valuemax={100}
+        >
+          <div
+            className="h-full rounded-full bg-ql-tertiary transition-all duration-300"
+            style={{ width: `${progressPct}%` }}
+          />
+        </div>
+      </div>
+
       {READINESS_QUESTIONS.map((question, index) => (
         <fieldset
           key={question.id}
@@ -260,25 +286,28 @@ function ResultPanel({
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-3 pt-2">
-        <Link
-          href={`/learn/roles#${primaryId}`}
-          className="rounded-lg bg-ql-primary px-4 py-2 text-sm font-semibold text-ql-on-primary no-underline"
-        >
-          See roles and who hires
-        </Link>
-        <Link
-          href="/learn/next"
-          className="rounded-lg border border-ql-outline-variant px-4 py-2 text-sm font-medium text-ql-on-surface no-underline"
-        >
-          Locations, LinkedIn, events
-        </Link>
-        <Link
-          href="/learn/pathway"
-          className="rounded-lg border border-ql-outline-variant px-4 py-2 text-sm font-medium text-ql-on-surface no-underline"
-        >
-          Ecosystem pathway
-        </Link>
+      <div className="space-y-3 border-t border-ql-outline-variant pt-4">
+        <p className="text-sm font-semibold text-ql-on-surface">What do I do next?</p>
+        <div className="flex flex-wrap gap-3">
+          <Link
+            href="/learn/classroom"
+            className="rounded-lg bg-ql-primary px-4 py-2 text-sm font-semibold text-ql-on-primary no-underline"
+          >
+            Start Your Learning Path
+          </Link>
+          <Link
+            href={`/learn/roles#${primaryId}`}
+            className="rounded-lg border border-ql-outline-variant px-4 py-2 text-sm font-medium text-ql-on-surface no-underline"
+          >
+            View recommended roles
+          </Link>
+          <a
+            href="/learn/navigator"
+            className="rounded-lg border border-ql-outline-variant px-4 py-2 text-sm font-medium text-ql-on-surface no-underline"
+          >
+            Refine with Navigator
+          </a>
+        </div>
       </div>
     </section>
   );

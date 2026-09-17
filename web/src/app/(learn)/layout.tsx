@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import LearnShell from "@/components/learn/LearnShell";
 
 export const metadata: Metadata = {
-  title: "Quantum Readiness Month · Quantum Global Group",
+  title: "Learn · Quantum Global Group",
   description:
-    "One-month workforce curriculum: find your fit, qubit fundamentals with Qolour, IBM Quantum Business Foundations, and a classical baseline lab.",
+    "Quantum Global Group workforce learning: Career Navigator, Readiness Track, Quantum Classroom, and Portfolio Lab — find your pathway, build skills, and apply what you learn.",
 };
 
 export default function LearnLayout({ children }: { children: React.ReactNode }) {

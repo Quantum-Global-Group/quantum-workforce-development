@@ -1,63 +1,46 @@
 import Link from "next/link";
 
+import LearnPageHeader from "@/components/learn/LearnPageHeader";
+import { LearnButton } from "@/components/learn/LearnButton";
+import { SectionHeader } from "@/components/learn/ProgramStageCard";
 import { LIBRARY_ITEMS } from "@/lib/curriculum/library";
 import { PARTNER_COURSES, QULTURE_LESSONS } from "@/lib/curriculum/qulture";
 
 export default function ClassroomPage() {
   return (
-    <div className="space-y-12">
-      <header className="max-w-3xl space-y-3">
-        <p className="text-xs font-bold uppercase tracking-[0.22em] text-ql-primary">
-          IBM Classroom · Quantum for the Qulture
-        </p>
-        <h1 className="font-headline text-4xl font-bold tracking-tight text-ql-on-surface">
-          Classroom, partner courses, and the Qulture sequence
-        </h1>
-        <p className="text-lg text-ql-on-surface-variant">
-          Quantum Global Group is approved for an IBM Quantum Classroom Account: invite the
-          cohort, no student credit cards, Open Plan QPU minutes. Pair that hardware with Qolour,
-          Q-CTRL Black Opal, Quantum Enigmas, and the Qulture lesson wall.
-        </p>
-      </header>
+    <div className="space-y-14">
+      <LearnPageHeader
+        eyebrow="03 · Classroom"
+        title="Quantum Classroom"
+        subtitle="Beginner-friendly learning sheets, hands-on activities, and trusted resources for building quantum intuition before formalism."
+        showJourney
+      >
+        <LearnButton href="/dashboard" variant="secondary">
+          Apply in Portfolio Lab
+        </LearnButton>
+      </LearnPageHeader>
 
-      <section className="space-y-3">
-        <h2 className="font-headline text-2xl font-bold text-ql-on-surface">Partner courses</h2>
-        <ul className="grid gap-3 md:grid-cols-2">
-          {PARTNER_COURSES.map((c) => (
-            <li
-              key={c.id}
-              className="rounded-xl border border-ql-outline-variant bg-ql-surface-low p-5"
-            >
-              <a href={c.href} className="font-headline text-lg font-bold text-ql-primary">
-                {c.name}
-              </a>
-              <p className="mt-2 text-sm text-ql-on-surface-variant">{c.role}</p>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <p className="max-w-3xl text-sm text-ql-on-surface-variant">
+        Quantum Global Group uses partner platforms and open resources — including IBM Quantum Classroom
+        Accounts where applicable — so cohorts can run on real hardware without student credit cards.
+        Partner names appear on resources they provide; the learning journey is owned by Quantum Global Group.
+      </p>
 
-      <section className="space-y-3">
-        <h2 className="font-headline text-2xl font-bold text-ql-on-surface">
-          Quantum for the Qulture lessons
-        </h2>
-        <p className="max-w-3xl text-sm text-ql-on-surface-variant">
-          Bitstrings before qubits. Vectors, matrices, complex numbers, shots, noise, tensors,
-          observables, Bloch sphere, variational calculus, then graphs → QAOA. Same slogan on every
-          sheet: learn the math, see the quantum, find your pathway.
-        </p>
+      <section className="space-y-4">
+        <SectionHeader
+          title="Quantum for the Qulture"
+          description="Bitstrings before qubits. Same slogan on every sheet: learn the math, see the quantum, find your pathway."
+        />
         <div className="space-y-3">
           {QULTURE_LESSONS.map((lesson) => (
             <article
               key={lesson.id}
-              className="rounded-xl border border-ql-outline-variant bg-ql-surface-low p-5"
+              className="rounded-xl border border-ql-outline-variant bg-ql-surface-low p-5 shadow-sm"
             >
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-ql-primary">
-                Lesson {lesson.number} · Week {lesson.week}
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-ql-tertiary">
+                Lesson {lesson.number} · Week {lesson.week} · Classroom
               </p>
-              <h3 className="mt-1 font-headline text-xl font-bold text-ql-on-surface">
-                {lesson.title}
-              </h3>
+              <h3 className="mt-1 font-headline text-xl font-bold text-ql-on-surface">{lesson.title}</h3>
               <p className="mt-2 text-sm text-ql-on-surface-variant">{lesson.hook}</p>
               <p className="mt-2 text-sm text-ql-on-surface">
                 <span className="font-semibold">Takeaway. </span>
@@ -68,23 +51,47 @@ export default function ClassroomPage() {
         </div>
       </section>
 
-      <section className="space-y-3">
-        <h2 className="font-headline text-2xl font-bold text-ql-on-surface">Downloadable references</h2>
-        <p className="max-w-3xl text-sm text-ql-on-surface-variant">
-          Qulture math sheets (QMMV), Max Cut workforce pair, IQM circuit sheet, and the PQC vs QKD
-          quick reference. Open any sheet in a new tab.
-        </p>
+      <section className="space-y-4">
+        <SectionHeader title="Partner learning resources" description="External courses and tools linked from the curriculum." />
+        <ul className="grid gap-3 md:grid-cols-2">
+          {PARTNER_COURSES.map((c) => (
+            <li
+              key={c.id}
+              className="rounded-xl border border-ql-outline-variant bg-ql-surface-low p-5 shadow-sm"
+            >
+              <a
+                href={c.href}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="font-headline text-lg font-bold text-ql-primary no-underline hover:underline"
+              >
+                {c.name}
+              </a>
+              <p className="mt-2 text-sm text-ql-on-surface-variant">{c.role}</p>
+              <p className="mt-3 text-xs font-medium uppercase tracking-wider text-ql-on-surface-variant">
+                Partner resource · Open
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="space-y-4">
+        <SectionHeader
+          title="Downloadable references"
+          description="Qulture math sheets, Max Cut workforce pair, IQM circuit sheet, and PQC vs QKD quick reference."
+        />
         <ul className="grid gap-3 md:grid-cols-2">
           {LIBRARY_ITEMS.map((item) => (
             <li
               key={item.id}
-              className="rounded-xl border border-ql-outline-variant bg-ql-surface-low p-5"
+              className="rounded-xl border border-ql-outline-variant bg-ql-surface-low p-5 shadow-sm"
             >
               <a
                 href={item.href}
                 target="_blank"
                 rel="noreferrer"
-                className="font-headline text-lg font-bold text-ql-primary"
+                className="font-headline text-lg font-bold text-ql-primary no-underline hover:underline"
               >
                 {item.title}
               </a>
@@ -92,15 +99,33 @@ export default function ClassroomPage() {
                 {item.source} · Week {item.week}
               </p>
               <p className="mt-2 text-sm text-ql-on-surface-variant">{item.note}</p>
+              <p className="mt-3 text-xs font-medium uppercase tracking-wider text-ql-on-surface-variant">
+                Download / Open
+              </p>
             </li>
           ))}
         </ul>
-        <p className="text-sm">
-          <Link href="/learn" className="text-ql-primary">
-            ← Back to the month
-          </Link>
-        </p>
       </section>
+
+      <section className="rounded-2xl border border-ql-primary/30 bg-ql-surface-low p-6">
+        <h2 className="font-headline text-xl font-bold text-ql-on-surface">Apply what you learned</h2>
+        <p className="mt-2 max-w-2xl text-sm text-ql-on-surface-variant">
+          Use Portfolio Lab to run hybrid workflows, compare against classical baselines, and build evidence
+          you can show employers or partners.
+        </p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <LearnButton href="/dashboard">Apply What You Learned</LearnButton>
+          <LearnButton href="/learn/readiness" variant="secondary">
+            Return to Your Pathway
+          </LearnButton>
+        </div>
+      </section>
+
+      <p className="text-sm">
+        <Link href="/learn" className="text-ql-primary no-underline hover:underline">
+          ← Back to program home
+        </Link>
+      </p>
     </div>
   );
 }

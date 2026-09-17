@@ -14,6 +14,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        "ql-canvas": "var(--ql-canvas)",
         "ql-surface": "var(--ql-surface)",
         "ql-surface-low": "var(--ql-surface-low)",
         "ql-surface-container": "var(--ql-surface-container)",

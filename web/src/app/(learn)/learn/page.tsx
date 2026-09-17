@@ -1,112 +1,142 @@
 import Link from "next/link";
 
-import { COURSES, NAVIGATION_REPO, PATHWAY_LIST, PROGRAM } from "@/lib/curriculum";
+import LearnPageHeader from "@/components/learn/LearnPageHeader";
+import { LearnButton } from "@/components/learn/LearnButton";
+import ProgramStageCard, { SectionHeader } from "@/components/learn/ProgramStageCard";
+import { COURSES, PATHWAY_LIST, PROGRAM } from "@/lib/curriculum";
 
 export default function LearnHomePage() {
   return (
-    <div className="space-y-14">
-      <section className="max-w-3xl space-y-4">
-        <p className="text-xs font-bold uppercase tracking-[0.22em] text-ql-primary">
-          Workforce development · 30 days
-        </p>
-        <h1 className="font-headline text-4xl font-bold tracking-tight text-ql-on-surface sm:text-5xl">
-          {PROGRAM.name}
-        </h1>
-        <p className="text-lg text-ql-on-surface-variant">{PROGRAM.promise}</p>
-        <p className="text-sm text-ql-on-surface-variant">
-          {PROGRAM.duration} · Built by {PROGRAM.org} for mixed-background cohorts — the same
-          people WISER is trying to bring into the quantum economy.
-        </p>
-        <div className="flex flex-wrap gap-3 pt-2">
-          <a
+    <div className="space-y-16">
+      <LearnPageHeader
+        eyebrow="Quantum Readiness Month · Workforce development"
+        title="Find Your Pathway Into Quantum"
+        subtitle="Start with where you fit, understand your readiness, build the fundamentals, and turn what you learn into something real."
+        showJourney
+      >
+        <LearnButton href="/learn/navigator">Find My Quantum Path</LearnButton>
+        <LearnButton href="#journey" variant="secondary">
+          Explore the Learning Journey
+        </LearnButton>
+      </LearnPageHeader>
+
+      <section id="journey" className="space-y-6">
+        <SectionHeader
+          title="Your guided path"
+          description="One progression — not four separate tools. New here? Start with the Career Navigator."
+        />
+        <div className="grid gap-4 md:grid-cols-2">
+          <ProgramStageCard
+            step="01"
+            title="Quantum Career Navigator"
+            description="Find where your skills, interests, and goals fit in the quantum ecosystem."
+            cta="Find My Path"
             href="/learn/navigator"
-            className="rounded-lg bg-ql-primary px-5 py-2.5 text-sm font-semibold text-ql-on-primary no-underline"
-          >
-            Open the Career Navigator
-          </a>
-          <Link
+            emphasized
+          />
+          <ProgramStageCard
+            step="02"
+            title="Quantum Readiness Track"
+            description="Map the expertise you already have to a practical quantum workforce pathway."
+            cta="Check My Readiness"
             href="/learn/readiness"
-            className="rounded-lg border border-ql-outline-variant px-5 py-2.5 text-sm font-medium text-ql-on-surface no-underline"
-          >
-            WISER Readiness Track
-          </Link>
-          <Link
-            href="/learn/roles"
-            className="rounded-lg border border-ql-outline-variant px-5 py-2.5 text-sm font-medium text-ql-on-surface no-underline"
-          >
-            Roles and hiring
-          </Link>
-          <Link
-            href="/learn/next"
-            className="rounded-lg border border-ql-outline-variant px-5 py-2.5 text-sm font-medium text-ql-on-surface no-underline"
-          >
-            Events and certs
-          </Link>
+          />
+          <ProgramStageCard
+            step="03"
+            title="Quantum Classroom"
+            description="Learn the concepts, tools, and fundamentals connected to your pathway."
+            cta="Start Learning"
+            href="/learn/classroom"
+          />
+          <ProgramStageCard
+            step="04"
+            title="Portfolio Lab"
+            description="Apply your learning through projects, case studies, and portfolio-ready work."
+            cta="Build Something"
+            href="/dashboard"
+          />
         </div>
-        <p className="text-sm text-ql-on-surface-variant">
-          The Navigator is also public on Kevin’s GitHub:{" "}
-          <a href={NAVIGATION_REPO.href} className="text-ql-primary">
-            {NAVIGATION_REPO.owner}/{NAVIGATION_REPO.name}
-          </a>
-          {" · "}
-          <a href={NAVIGATION_REPO.pages} className="text-ql-primary">
-            GitHub Pages
-          </a>
-        </p>
       </section>
 
-      <section>
-        <h2 className="font-headline text-2xl font-bold text-ql-on-surface">The month</h2>
-        <p className="mt-2 max-w-3xl text-sm text-ql-on-surface-variant">
-          Four courses, one per week. Week 1 starts with the Career Navigator (profile ×
-          interest × goal), then the WISER-aligned eight-pathway quiz. Then roles, regional
-          hubs, LinkedIn, hackathons, Qiskit Summer School and Fall Fest, the C1000-179
-          developer cert, and the Advocate program. Week 2 now includes Qolour, Q-CTRL Black
-          Opal, and IBM Classroom hardware. Week 3 adds Quantum Enigmas and the PQC vs QKD
-          case file.
-        </p>
-        <ol className="mt-6 grid gap-4 md:grid-cols-2">
+      <section className="rounded-2xl border border-ql-outline-variant bg-ql-surface-low p-6 sm:p-8">
+        <SectionHeader
+          title="What is this program?"
+          description={PROGRAM.promise}
+        />
+        <dl className="mt-6 grid gap-4 sm:grid-cols-2">
+          <div>
+            <dt className="text-xs font-bold uppercase tracking-wider text-ql-primary">Who it&apos;s for</dt>
+            <dd className="mt-1 text-sm text-ql-on-surface-variant">{PROGRAM.audience}</dd>
+          </div>
+          <div>
+            <dt className="text-xs font-bold uppercase tracking-wider text-ql-primary">Duration</dt>
+            <dd className="mt-1 text-sm text-ql-on-surface-variant">{PROGRAM.duration}</dd>
+          </div>
+          <div className="sm:col-span-2">
+            <dt className="text-xs font-bold uppercase tracking-wider text-ql-primary">Where to start</dt>
+            <dd className="mt-1 text-sm text-ql-on-surface-variant">
+              Open the{" "}
+              <a href="/learn/navigator" className="text-ql-primary">
+                Quantum Career Navigator
+              </a>
+              , then continue with Readiness, Classroom, and Portfolio Lab.
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section className="space-y-6">
+        <SectionHeader
+          title="Four-week journey"
+          description="One course per week. Week 1 centers on pathway discovery; later weeks build intuition, business context, and measurable baselines."
+        />
+        <ol className="grid gap-4 md:grid-cols-2">
           {COURSES.map((course) => (
             <li key={course.slug}>
               <Link
                 href={`/learn/courses/${course.slug}`}
-                className="block h-full rounded-xl border border-ql-outline-variant bg-ql-surface-low p-5 no-underline transition-colors hover:border-ql-primary"
+                className="block h-full rounded-xl border border-ql-outline-variant bg-ql-surface-low p-5 no-underline shadow-sm transition-colors hover:border-ql-primary"
               >
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-ql-primary">
                   Week {course.week} · {course.code}
                 </p>
-                <h3 className="mt-2 font-headline text-xl font-bold text-ql-on-surface">
-                  {course.title}
-                </h3>
+                <h3 className="mt-2 font-headline text-xl font-bold text-ql-on-surface">{course.title}</h3>
                 <p className="mt-2 text-sm text-ql-on-surface-variant">{course.subtitle}</p>
-                <p className="mt-3 text-xs text-ql-on-surface-variant">Partner: {course.partner}</p>
               </Link>
             </li>
           ))}
         </ol>
       </section>
 
-      <section>
-        <h2 className="font-headline text-2xl font-bold text-ql-on-surface">
-          Where subject-matter expertise already fits
-        </h2>
-        <p className="mt-2 max-w-3xl text-sm text-ql-on-surface-variant">
-          Aligned with WISER’s career areas, plus an Applied Domain Specialist track for people
-          whose value is the problem — finance, logistics, health, energy — not a physics pedigree.
-        </p>
-        <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="space-y-6">
+        <SectionHeader
+          title="Quantum workforce pathways"
+          description="Eight practical pathways — from applied domain work to software, security, business, and education."
+        />
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {PATHWAY_LIST.map((pathway) => (
             <Link
               key={pathway.id}
               href={`/learn/roles#${pathway.id}`}
               className="rounded-xl border border-ql-outline-variant bg-ql-surface-low p-4 no-underline hover:border-ql-primary"
             >
-              <h3 className="font-headline text-base font-bold text-ql-on-surface">
-                {pathway.shortName}
-              </h3>
+              <h3 className="font-headline text-base font-bold text-ql-on-surface">{pathway.shortName}</h3>
               <p className="mt-2 text-sm text-ql-on-surface-variant">{pathway.tagline}</p>
             </Link>
           ))}
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-ql-primary/40 bg-ql-primary/10 p-8 text-center">
+        <h2 className="font-headline text-2xl font-bold text-ql-on-surface">Ready to find your place?</h2>
+        <p className="mx-auto mt-2 max-w-xl text-sm text-ql-on-surface-variant">
+          The Career Navigator is the best first step if you are asking: &ldquo;Where do I fit in quantum?&rdquo;
+        </p>
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          <LearnButton href="/learn/navigator">Find My Quantum Path</LearnButton>
+          <LearnButton href="/learn/readiness" variant="secondary">
+            Check My Readiness
+          </LearnButton>
         </div>
       </section>
     </div>
