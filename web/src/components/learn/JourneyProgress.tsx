@@ -15,7 +15,7 @@ export default function JourneyProgress({ compact }: { compact?: boolean }) {
       className={
         compact
           ? "flex flex-wrap gap-2"
-          : "grid gap-2 sm:grid-cols-2 lg:grid-cols-4"
+          : "grid gap-2 sm:grid-cols-3"
       }
     >
       {LEARN_JOURNEY.map((stage) => {

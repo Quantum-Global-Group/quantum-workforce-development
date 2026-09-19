@@ -132,7 +132,7 @@ export const LIBRARY_ITEMS: LibraryItem[] = [
   {
     id: "navigator",
     title: "Quantum Career Navigator",
-    source: "QuantumKev/ibm-quantum-navigation (public GitHub + Pages)",
+    source: "Quantum Global Group Career Navigator",
     href: "/learn/navigator",
     note: "Interactive pathway engine: profile × interest × goal → board, role family, forecast, enterprise meter.",
     week: 1,
@@ -142,7 +142,7 @@ export const LIBRARY_ITEMS: LibraryItem[] = [
     title: "Quantum ecosystem pathway one-pager",
     source: "Quantum Global Group",
     href: "/learn/pathway",
-    note: "Interests → IBM Learning / Composer / Qiskit → university or industry fork → Advocate and projects.",
+    note: "Interests → structured learning and Qiskit → university or industry fork → projects.",
     week: 1,
   },
 ];

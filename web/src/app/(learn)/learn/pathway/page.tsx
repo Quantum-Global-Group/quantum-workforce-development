@@ -4,7 +4,6 @@ import {
   ECOSYSTEM_PATHWAY,
   ECOSYSTEM_STEPS,
   INDUSTRY_PATH,
-  NAVIGATION_REPO,
   NAVIGATOR_HREF,
   UNIVERSITY_PATH,
 } from "@/lib/curriculum/ecosystem";
@@ -26,20 +25,7 @@ export default function PathwayPage() {
             Career Navigator
           </a>{" "}
           — profile, interest, and goal into a pathway board, role family, forecast, and
-          enterprise meter. This page is the one-pager summary (university vs industry). Slide
-          source:{" "}
-          <code className="font-mono text-xs">
-            docs/curriculum/references/Quantum_Ecosystem_Pathway_OnePager.pptx
-          </code>
-          . Code:{" "}
-          <a href={NAVIGATION_REPO.href} className="text-ql-primary">
-            {NAVIGATION_REPO.owner}/{NAVIGATION_REPO.name}
-          </a>
-          {" · "}
-          <a href={NAVIGATION_REPO.pages} className="text-ql-primary">
-            GitHub Pages
-          </a>
-          .
+          enterprise meter. This page is the one-pager summary (university vs industry).
         </p>
         <p>
           <a

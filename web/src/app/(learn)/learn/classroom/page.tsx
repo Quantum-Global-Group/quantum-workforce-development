@@ -29,7 +29,7 @@ export default function ClassroomPage() {
       <section className="rounded-2xl border border-ql-primary/35 bg-ql-surface-low p-6 sm:p-8">
         <SectionHeader
           title="Run on real hardware"
-          description="QUANTUM GLOBAL GROUP provides IBM Quantum Classroom Account access for the cohort — Open Plan QPU time, no student credit card. There is no public invite link: request access with your email and we will add you. If you are already on the account, sign in to the platform."
+          description="QUANTUM GLOBAL GROUP provides hardware access for the cohort — QPU time without a student credit card. There is no public invite link: request access with your email and we will add you. If you already have access, sign in to the platform."
         />
         <div className="mt-6 flex flex-wrap gap-3">
           <LearnButton href="https://www.quantumglobalgroup.io/#contact" variant="primary">
@@ -130,8 +130,8 @@ export default function ClassroomPage() {
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
           <LearnButton href="/dashboard">Apply What You Learned</LearnButton>
-          <LearnButton href="/learn/readiness" variant="secondary">
-            Return to Your Pathway
+          <LearnButton href="/learn/navigator" variant="secondary">
+            Return to Navigator
           </LearnButton>
         </div>
       </section>

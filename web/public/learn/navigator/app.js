@@ -29,7 +29,7 @@
       { id: "admin", title: "University Administrator", track: "university", start: "University",
         desc: "We want to build a quantum program, but we need guidance on curriculum, faculty, students, and industry alignment." },
       { id: "researcher", title: "Researcher", track: "learner", start: "Researcher",
-        desc: "I want to align my work with the IBM Quantum Network, papers, and collaborators." },
+        desc: "I want to align my work with papers, labs, and collaborators." },
       { id: "changer", title: "Career Changer", track: "learner", start: "Career changer",
         desc: "I'm moving into quantum from another field and need a clear, credible path to a role." },
       { id: "industry", title: "Industry Professional", track: "learner", start: "Industry professional",
@@ -44,24 +44,24 @@
 
     interests: [
       { id: "medicine", label: "Medicine & Drug Discovery", focus: "quantum chemistry, Hamiltonians, and molecular simulation", project: "a molecular simulation / drug-discovery notebook", partners: "healthcare & life-sciences partners (Cleveland Clinic, Moderna, BasQ)", family: "research" },
-      { id: "finance", label: "Finance", focus: "optimization, Monte Carlo, and portfolio modeling", project: "a portfolio-optimization / QAOA finance demo", partners: "financial-services members of the IBM Quantum Network", family: "software" },
+      { id: "finance", label: "Finance", focus: "optimization, Monte Carlo, and portfolio modeling", project: "a portfolio-optimization / QAOA finance demo", partners: "financial-services industry partners", family: "software" },
       { id: "logistics", label: "Logistics", focus: "routing, scheduling, and combinatorial optimization", project: "a vehicle-routing / scheduling optimization demo", partners: "supply-chain & logistics partners", family: "software" },
       { id: "sports", label: "Sports Analytics", focus: "optimization and probabilistic modeling", project: "a lineup / strategy optimization analytics demo", partners: "analytics-driven sports organizations", family: "software" },
       { id: "cybersecurity", label: "Cybersecurity", focus: "cryptography, quantum-safe security, and Shor's algorithm", project: "a quantum-safe cryptography demo", partners: "security & infrastructure partners", family: "security" },
       { id: "ai", label: "Artificial Intelligence", focus: "quantum machine learning and kernel methods", project: "a quantum machine-learning classifier", partners: "AI & machine-learning research groups", family: "software" },
-      { id: "software", label: "Quantum Software", focus: "Qiskit, circuits, transpilation, and tooling", project: "an open-source Qiskit tool or library contribution", partners: "the Qiskit ecosystem & IBM Quantum software teams", family: "software" },
+      { id: "software", label: "Quantum Software", focus: "Qiskit, circuits, transpilation, and tooling", project: "an open-source Qiskit tool or library contribution", partners: "the Qiskit ecosystem and quantum software teams", family: "software" },
       { id: "hardware", label: "Quantum Hardware", focus: "qubits, gates, noise, and device characterization", project: "a noise-characterization / calibration study", partners: "hardware & device-physics labs", family: "hardware" },
       { id: "materials", label: "Materials Science", focus: "condensed matter and materials simulation", project: "a materials / lattice-simulation project", partners: "materials & energy research institutions", family: "research" },
       { id: "energy", label: "Energy", focus: "optimization and chemistry for energy systems", project: "a grid-optimization / battery-chemistry demo", partners: "energy & utilities partners", family: "software" },
       { id: "optimization", label: "Optimization", focus: "QAOA, VQE, and combinatorial optimization", project: "a constrained-optimization benchmark", partners: "operations-research & industry partners", family: "software" },
-      { id: "research", label: "Research", focus: "algorithms, papers, and reproducible experiments", project: "a reproducible algorithm study tied to recent papers", partners: "IBM Quantum Network universities & labs", family: "research" },
+      { id: "research", label: "Research", focus: "algorithms, papers, and reproducible experiments", project: "a reproducible algorithm study tied to recent papers", partners: "university and industry labs", family: "research" },
       { id: "education", label: "Education & Community", focus: "teaching, curriculum, and community building", project: "a teaching module or community workshop", partners: "universities, educators & community programs", family: "business" },
       { id: "quantumsafe", label: "Quantum Safe Security", focus: "post-quantum cryptography and enterprise risk", project: "a quantum-safe migration assessment", partners: "enterprises modernizing cryptography", family: "security" },
       { id: "foundry", label: "Quantum Foundry & Manufacturing", focus: "fabrication, cleanroom, and device manufacturing", project: "a fabrication / yield-analysis study", partners: "foundry & semiconductor manufacturing partners", family: "hardware" }
     ],
 
     goals: [
-      { id: "internship", label: "Get an Internship", gate: "industry", outcome: "Quantum internship candidate", apply: "Apply to internships and IBM Quantum roles", prep: "polish your resume, GitHub, and a technical story", badge: "Quantum readiness portfolio", kpis: ["internships", "jobs"] },
+      { id: "internship", label: "Get an Internship", gate: "industry", outcome: "Quantum internship candidate", apply: "Apply to internships and quantum roles", prep: "polish your resume, GitHub, and a technical story", badge: "Quantum readiness portfolio", kpis: ["internships", "jobs"] },
       { id: "apprenticeship", label: "Get an Apprenticeship", gate: "industry", outcome: "Apprenticeship-ready candidate", apply: "Apply to apprenticeships & earn-and-learn programs", prep: "build a hands-on skills portfolio", badge: "Hands-on skills credential", kpis: ["apprenticeships", "jobs"] },
       { id: "job", label: "Get a Full-Time Job", gate: "industry", outcome: "Quantum-ready hire", apply: "Apply to full-time quantum & quantum-adjacent roles", prep: "rehearse technical interviews and storytelling", badge: "Qiskit Developer credential", kpis: ["jobs", "internships"] },
       { id: "gradschool", label: "Prepare for Graduate School", gate: "research", outcome: "Graduate-school-ready applicant", apply: "Identify advisors and submit strong applications", prep: "read papers, contact labs, and draft a statement", badge: "Research foundations badge", kpis: ["gradschool", "research"] },
@@ -71,12 +71,12 @@
       { id: "opensource", label: "Contribute to Open Source", gate: "project", outcome: "Open-source contributor", apply: "Open pull requests in the Qiskit ecosystem", prep: "find good-first-issues and engage maintainers", badge: "Open-source contributor badge", kpis: ["opensource", "projects"] },
       { id: "advocate", label: "Become a Qiskit Advocate", gate: "community", outcome: "Qiskit Advocate & community leader", apply: "Apply to the Qiskit Advocates program", prep: "contribute, mentor, and show community impact", badge: "Qiskit Advocate", kpis: ["advocates", "projects"] },
       { id: "campusprogram", label: "Host a Campus Quantum Program", gate: "university", outcome: "Active campus quantum program", apply: "Launch events and recruit a student cohort", prep: "secure faculty sponsorship and Classroom Accounts", badge: "Campus program badge", kpis: ["universities", "students"] },
-      { id: "universitypathway", label: "Build a University Quantum Pathway", gate: "university", outcome: "University quantum workforce pathway", apply: "Stand up curriculum, research tracks, and partnerships", prep: "align faculty, courses, and the IBM Quantum Network", badge: "Program design badge", kpis: ["universities", "faculty"] },
+      { id: "universitypathway", label: "Build a University Quantum Pathway", gate: "university", outcome: "University quantum workforce pathway", apply: "Stand up curriculum, research tracks, and partnerships", prep: "align faculty, courses, and industry partners", badge: "Program design badge", kpis: ["universities", "faculty"] },
       { id: "enterprise", label: "Assess Enterprise Quantum Readiness", gate: "enterprise", outcome: "Enterprise quantum readiness plan", apply: "Run a readiness assessment and assign a quantum team", prep: "map use cases, data, and skills gaps", badge: "Enterprise readiness assessment", kpis: ["readiness", "teams"] },
       { id: "talentpipeline", label: "Build a Talent Pipeline", gate: "industry", outcome: "Quantum-ready hiring pipeline", apply: "Sponsor projects, internships, and apprenticeships", prep: "translate roles into skills and partner with universities", badge: "Talent pipeline blueprint", kpis: ["employers", "internships"] }
     ],
 
-    /* IBM Quantum role families (built from IBM Careers role examples) */
+    /* Quantum role families */
     roleFamilies: [
       {
         id: "research", letter: "A", name: "Research", color: "#6929c4",
@@ -86,21 +86,21 @@
         learning: ["Quantum foundations", "Quantum algorithms", "Error correction", "Research papers", "Qiskit research projects"],
         badges: ["Basics of Quantum Information", "Advanced quantum information", "Research foundations"],
         projects: ["Reproduce a recent algorithm paper", "VQE / quantum chemistry study", "Error-mitigation experiment"],
-        opportunities: ["Summer research", "PhD pathways", "IBM Research roles", "IBM Quantum Network labs"],
+        opportunities: ["Summer research", "PhD pathways", "research lab roles", "industry quantum network labs"],
         bestFit: ["Physics Student", "Graduate Student", "Researcher"],
-        curriculum: { y1: ["Linear algebra", "Intro quantum mechanics", "IBM Quantum Learning foundations"], y2: ["Quantum algorithms", "Qiskit", "Probability & statistics"], y3: ["Error correction", "Research methods", "Reproduce a paper"], y4: ["Summer research", "Thesis / capstone", "IBM Quantum Network engagement"], outcome: "Graduate ready for a PhD or research role." }
+        curriculum: { y1: ["Linear algebra", "Intro quantum mechanics", "structured quantum learning foundations"], y2: ["Quantum algorithms", "Qiskit", "Probability & statistics"], y3: ["Error correction", "Research methods", "Reproduce a paper"], y4: ["Summer research", "Thesis / capstone", "industry quantum network engagement"], outcome: "Graduate ready for a PhD or research role." }
       },
       {
         id: "software", letter: "B", name: "Software & Infrastructure", color: "#0f62fe",
         overview: "Builds the software, tooling, and infrastructure that make quantum usable — from Qiskit to cloud and HPC workflows.",
-        examples: ["Qiskit Software Developer", "Full Stack Software Developer", "Software Developer, Quantum-Centric Supercomputing", "Data Engineer — IBM Quantum", "Security Engineer"],
+        examples: ["Qiskit Software Developer", "Full Stack Software Developer", "Software Developer, Quantum-Centric Supercomputing", "Quantum Data Engineer", "Security Engineer"],
         skills: ["Python", "Qiskit", "GitHub", "APIs", "Cloud", "HPC workflows", "Software engineering"],
-        learning: ["IBM Quantum Learning", "Qiskit coding labs", "Composer", "Open-source contribution", "GitHub portfolio"],
+        learning: ["structured quantum learning", "Qiskit coding labs", "Composer", "Open-source contribution", "GitHub portfolio"],
         badges: ["Qiskit Developer", "Use a Quantum Computer Today", "Open-source contributor"],
         projects: ["Bell State tutorial", "QAOA demo", "Quantum chemistry notebook", "Resolve an open-source issue"],
-        opportunities: ["Internship", "Open-source contribution", "IBM Quantum software role", "IBM Quantum Network company"],
+        opportunities: ["Internship", "Open-source contribution", "quantum software role", "industry quantum network company"],
         bestFit: ["Software Developer", "Data Scientist", "Career Changer"],
-        curriculum: { y1: ["Python", "Linear algebra", "Intro quantum", "IBM Quantum Learning"], y2: ["Qiskit", "Circuits", "GitHub", "Composer", "Basic algorithms"], y3: ["Projects", "Open-source contribution", "QAOA", "VQE", "Quantum chemistry"], y4: ["Internship", "Capstone", "Research lab", "IBM Quantum Network engagement"], outcome: "Graduate with a portfolio and a path into internship, grad school, or employment." }
+        curriculum: { y1: ["Python", "Linear algebra", "Intro quantum", "structured quantum learning"], y2: ["Qiskit", "Circuits", "GitHub", "Composer", "Basic algorithms"], y3: ["Projects", "Open-source contribution", "QAOA", "VQE", "Quantum chemistry"], y4: ["Internship", "Capstone", "Research lab", "industry quantum network engagement"], outcome: "Graduate with a portfolio and a path into internship, grad school, or employment." }
       },
       {
         id: "hardware", letter: "C", name: "Hardware & Engineering", color: "#1192e8",
@@ -131,7 +131,7 @@
         overview: "Grows the ecosystem and the workforce — community, programs, partnerships, and developer advocacy.",
         examples: ["Qiskit Community Manager", "Strategic Partnerships", "Workforce Development", "Technical Project Manager", "Learning Program Manager"],
         skills: ["Community building", "Program management", "Workforce strategy", "Partnerships", "Curriculum alignment", "Developer advocacy", "Content creation"],
-        learning: ["IBM Quantum Learning", "Qiskit Advocate Program", "Fall Fest leadership", "Workforce development projects", "Technical storytelling"],
+        learning: ["structured quantum learning", "Qiskit Advocate Program", "Fall Fest leadership", "Workforce development projects", "Technical storytelling"],
         badges: ["Qiskit Advocate", "Program design"],
         projects: ["Run a Fall Fest event", "Build a workforce program", "Create a learning module"],
         opportunities: ["Community management", "Program management", "Workforce development", "Partnerships"],
@@ -153,27 +153,22 @@
     ],
 
     learningResources: [
-      { id: "learning", name: "IBM Quantum Learning", url: "https://quantum.cloud.ibm.com/learning/en", helps: "Structured courses from foundations to utility-scale", stage: "Foundation", families: ["research", "software", "consulting", "business", "security"], purpose: ["learning"] },
-      { id: "composer", name: "IBM Quantum Composer", url: "https://quantum.cloud.ibm.com/", helps: "Build & visualize circuits in the browser", stage: "Practice", families: ["software", "research"], purpose: ["practice", "learning"] },
-      { id: "classroom", name: "Classroom Accounts", url: "https://quantum.cloud.ibm.com/learning/en", helps: "Guided labs & assignments for educators", stage: "Foundation", families: ["business", "research"], purpose: ["learning", "community"] },
-      { id: "qiskit", name: "Qiskit", url: "https://www.ibm.com/quantum/qiskit", helps: "Open-source SDK for quantum programming", stage: "Practice", families: ["software", "research", "hardware"], purpose: ["practice", "projects"] },
-      { id: "advocates", name: "Qiskit Advocates", url: "https://www.ibm.com/quantum/ecosystem", helps: "Mentors, community, and leadership", stage: "Community", families: ["business", "software"], purpose: ["community"] },
-      { id: "fallfest", name: "Qiskit Fall Fest", url: "https://www.ibm.com/quantum/ecosystem", helps: "Campus events & community entry points", stage: "Community", families: ["business"], purpose: ["community"] },
-      { id: "network", name: "IBM Quantum Network", url: "https://www.ibm.com/quantum/ibm-quantum-network", helps: "300+ universities, companies & startups", stage: "Industry / Research gate", families: ["research", "consulting", "business", "security"], purpose: ["industry", "research"] },
-      { id: "qgss", name: "Qiskit Global Summer School", url: "https://www.ibm.com/quantum/blog/qiskit-summer-school-2026", helps: "Free virtual program & workforce workshops", stage: "Foundation / Skill", families: ["software", "research", "business"], purpose: ["learning", "community"] },
-      { id: "ecosystem", name: "IBM Quantum Ecosystem Projects", url: "https://www.ibm.com/quantum/ecosystem", helps: "Open-source tools to use, extend, publish", stage: "Project quest", families: ["software", "research"], purpose: ["projects"] },
-      { id: "casestudies", name: "IBM Quantum Case Studies", url: "https://www.ibm.com/quantum/case-studies", helps: "Real partner stories & workflows", stage: "Industry gate", families: ["consulting", "business", "security"], purpose: ["industry", "research"] },
-      { id: "careers", name: "IBM Quantum Careers", url: "https://www.ibm.com/quantum", helps: "Roles, internships & pathways", stage: "Opportunity", families: ["research", "software", "hardware", "consulting", "business", "security"], purpose: ["careers"] },
-      { id: "research", name: "IBM Research", url: "https://research.ibm.com/", helps: "Frontier research, papers & collaborations", stage: "Research gate", families: ["research", "hardware"], purpose: ["research"] },
-      { id: "ventures", name: "IBM Ventures / Startups", url: "https://www.ibm.com/quantum/ibm-quantum-network", helps: "Startup ecosystem & entrepreneurship", stage: "Industry gate", families: ["consulting", "business"], purpose: ["industry", "careers"] }
+      { id: "learning", name: "QGG Classroom", url: "/learn/classroom", helps: "Lesson sheets and fundamentals connected to your pathway", stage: "Foundation", families: ["research", "software", "consulting", "business", "security"], purpose: ["learning"] },
+      { id: "composer", name: "Real QPU access", url: "https://quantum.cloud.ibm.com/", helps: "Run circuits on real hardware when you have an API key", stage: "Practice", families: ["software", "research"], purpose: ["practice", "learning"] },
+      { id: "classroom", name: "QGG learning journey", url: "/learn", helps: "Guided path from fit to portfolio-ready work", stage: "Foundation", families: ["business", "research"], purpose: ["learning", "community"] },
+      { id: "qiskit", name: "Qiskit", url: "https://www.qiskit.org/", helps: "Open-source SDK for quantum programming", stage: "Practice", families: ["software", "research", "hardware"], purpose: ["practice", "projects"] },
+      { id: "playground", name: "QGG Playground", url: "https://huggingface.co/quantumGlobalGroup", helps: "Live experiments and project demos on real QPUs", stage: "Practice", families: ["software", "research"], purpose: ["practice", "projects"] },
+      { id: "github", name: "QGG GitHub", url: "https://github.com/Quantum-Global-Group", helps: "Open projects, tutorials, and contribution starting points", stage: "Project quest", families: ["software", "research"], purpose: ["projects"] },
+      { id: "contact", name: "Start a conversation", url: "https://www.quantumglobalgroup.io/#contact", helps: "Talk with QUANTUM GLOBAL GROUP about pilots, workforce, or access", stage: "Opportunity", families: ["consulting", "business", "security"], purpose: ["industry", "careers"] },
+      { id: "careers", name: "Quantum careers", url: "https://www.quantumglobalgroup.io/", helps: "Roles, internships, and pathway conversations", stage: "Opportunity", families: ["research", "software", "hardware", "consulting", "business", "security"], purpose: ["careers"] }
     ],
 
     workforceForecast: [
       { year: "Year 1", title: "Onboard & engage", summary: "Prepare learners for current internships, entry-level roles, Qiskit community engagement, and project experience.",
-        focus: ["Qiskit", "Python", "IBM Quantum Learning", "Composer", "GitHub", "Internships", "Classroom Accounts", "Fall Fest"] },
+        focus: ["Qiskit", "Python", "structured quantum learning", "Composer", "GitHub", "Internships", "Classroom Accounts", "Fall Fest"] },
       { year: "Year 2", title: "Specialize", summary: "Prepare learners for specialized roles in quantum software, hardware, consulting, client delivery, and research support.",
         focus: ["QAOA", "VQE", "Quantum chemistry", "Quantum safe", "Quantum workflows", "Technical communication", "Research papers", "Industry use cases"] },
-      { year: "Year 3", title: "Pipeline for the roadmap", summary: "Prepare talent pipelines for future IBM roadmap needs across hardware, supercomputing, and enterprise readiness.",
+      { year: "Year 3", title: "Pipeline for the roadmap", summary: "Prepare talent pipelines for hardware, supercomputing, and enterprise readiness.",
         focus: ["Error correction", "Quantum-centric supercomputing", "Quantum foundry", "Cryogenics", "Control systems", "Quantum safe transformation", "Industry applications", "Enterprise readiness"] }
     ],
 
@@ -183,10 +178,10 @@
         { id: "data", label: "Data readiness", desc: "Is the data for those use cases available, clean, and well understood?", sample: "medium" },
         { id: "workforce", label: "Workforce readiness", desc: "Do you have people with the skills — or a plan to build them?", sample: "low" },
         { id: "technology", label: "Technology readiness", desc: "Is your cloud, HPC, and tooling foundation in place?", sample: "medium" },
-        { id: "partnership", label: "Partnership readiness", desc: "Are you connected to the IBM Quantum Network, universities, or startups?", sample: "medium" },
+        { id: "partnership", label: "Partnership readiness", desc: "Are you connected to the industry quantum network, universities, or startups?", sample: "medium" },
         { id: "leadership", label: "Leadership readiness", desc: "Is there executive sponsorship and a funded mandate to explore quantum?", sample: "medium" }
       ],
-      recommendation: "Start with use case discovery, assign an internal quantum team, identify skills gaps, complete IBM Quantum Learning, and partner with universities or IBM Quantum Network participants."
+      recommendation: "Start with use case discovery, assign an internal quantum team, identify skills gaps, complete structured quantum learning, and partner with universities or industry quantum network participants."
     },
 
     teamScenarios: [
@@ -199,7 +194,7 @@
       { role: "Executive Sponsor", does: "Funds the initiative and removes barriers.", skills: "Strategy, budgeting, change leadership", modules: "Quantum business foundations", contributes: "Mandate, funding, alignment" },
       { role: "Business Lead", does: "Owns the use case and business value.", skills: "Domain strategy, ROI, prioritization", modules: "Use case discovery", contributes: "Problem definition & success metrics" },
       { role: "Domain Expert", does: "Brings deep field knowledge to the problem.", skills: "Scientific / industry expertise", modules: "Quantum applications in the domain", contributes: "Realistic problem framing & validation" },
-      { role: "Quantum Developer", does: "Builds and runs quantum workflows.", skills: "Qiskit, circuits, algorithms", modules: "IBM Quantum Learning, Qiskit labs", contributes: "Working quantum prototype" },
+      { role: "Quantum Developer", does: "Builds and runs quantum workflows.", skills: "Qiskit, circuits, algorithms", modules: "structured quantum learning, Qiskit labs", contributes: "Working quantum prototype" },
       { role: "Data Scientist", does: "Prepares data and evaluates results.", skills: "Statistics, modeling, Python", modules: "Quantum machine learning", contributes: "Data pipelines & evaluation" },
       { role: "Classical ML Engineer", does: "Builds hybrid classical/quantum baselines.", skills: "ML, optimization, engineering", modules: "Hybrid algorithms", contributes: "Baselines & integration" },
       { role: "Cloud / HPC Engineer", does: "Runs workloads at scale.", skills: "Cloud, HPC, infrastructure", modules: "Quantum-centric supercomputing", contributes: "Scalable execution environment" },
@@ -211,7 +206,7 @@
       { id: "students", label: "Students onboarded", base: 4820 },
       { id: "universities", label: "Universities activated", base: 186 },
       { id: "faculty", label: "Faculty trained", base: 540 },
-      { id: "completions", label: "IBM Learning completions", base: 12400 },
+      { id: "completions", label: "Learning completions", base: 12400 },
       { id: "badges", label: "Badges earned", base: 9100 },
       { id: "certs", label: "Qiskit certifications", base: 2300 },
       { id: "classroom", label: "Classroom accounts created", base: 410 },
@@ -357,7 +352,7 @@
       skills: fam.skills.slice(0, 6),
       badges: dedupe([goal.badge].concat(fam.badges.slice(0, 2))),
       projects: dedupe([interest.project].concat(fam.projects.slice(0, 2))),
-      community: ["Qiskit Advocates", "Qiskit Fall Fest", "Qiskit Global Summer School"],
+      community: ["QGG Classroom", "QGG Playground", "open-source contribution"],
       opportunity: goal.outcome,
       family: fam
     };
@@ -367,7 +362,7 @@
   function learnerNodes(avatar, interest, goal) {
     const research = goal.gate === "research";
     const gateMission = research
-      ? mission("research", "Read papers & match research", "Study work from IBM Quantum Network universities and identify labs in " + interest.label + ".")
+      ? mission("research", "Read papers & match research", "Study work from industry quantum network universities and identify labs in " + interest.label + ".")
       : mission("industry", "Find industry alignment", "Identify " + interest.partners + " and the roles you're targeting.");
     const connectMission = research
       ? mission("mentor", "Connect with faculty / a lab", "Reach out to researchers and prepare a focused message.")
@@ -375,10 +370,10 @@
     return [
       mission("start", avatar.start, avatar.desc),
       mission("skill", "Learn quantum foundations", "Build core intuition for qubits, gates, and measurement."),
-      mission("skill", "Complete IBM Quantum Learning", "Work through structured modules and earn a foundations badge."),
-      mission("skill", "Practice with Composer & Qiskit", "Move from theory to running real circuits."),
+      mission("skill", "Complete structured quantum learning", "Work through structured modules and earn a foundations badge."),
+      mission("skill", "Practice with Qiskit and real hardware", "Move from theory to running real circuits."),
       mission("mission", "Go deep on " + interest.label, "Focus on " + interest.focus + "."),
-      mission("community", "Join Qiskit Advocates / Fall Fest", "Plug into the community and find a mentor."),
+      mission("community", "Join a quantum learning community", "Plug into QGG Classroom, projects, and mentors."),
       gateMission,
       mission("project", "Build a portfolio project", "Create " + interest.project + "."),
       connectMission,
@@ -391,12 +386,12 @@
     return [
       mission("start", "University readiness assessment", "Map faculty, courses, students, clubs, and research."),
       mission("mission", "Identify faculty champions", "Find the educators who will anchor the program."),
-      mission("skill", "Use IBM Quantum Learning", "Adopt structured modules into existing courses."),
-      mission("skill", "Set up Classroom Accounts", "Enable guided labs and assignments."),
-      mission("community", "Host Qiskit Fall Fest", "Create a campus entry point and community."),
+      mission("skill", "Use structured quantum learning", "Adopt structured modules into existing courses."),
+      mission("skill", "Set up QGG Classroom access", "Enable guided labs and assignments."),
+      mission("community", "Host a campus quantum program", "Create a campus entry point and community."),
       mission("mentor", "Activate student advocates", "Develop student leaders and mentors."),
-      mission("mission", "Build curriculum around role families", "Design tracks aligned to IBM Quantum role families."),
-      mission("industry", "Connect students to projects & internships", "Link to " + interest.partners + " and the IBM Quantum Network."),
+      mission("mission", "Build curriculum around role families", "Design tracks aligned to quantum role families."),
+      mission("industry", "Connect students to projects & internships", "Link to " + interest.partners + " and the industry quantum network."),
       mission("outcome", goal.outcome, "A sustainable university quantum workforce pathway.")
     ];
   }
@@ -407,8 +402,8 @@
         mission("start", "Enterprise readiness check", "Assess business, data, workforce, technology, partnership & leadership readiness."),
         mission("mission", "Discover use cases", "Identify high-value problems in " + interest.label + "."),
         mission("mentor", "Assign an internal quantum team", "Stand up the cross-functional team (see Build the Quantum Team)."),
-        mission("skill", "Close skills gaps", "Upskill the team via IBM Quantum Learning."),
-        mission("industry", "Partner & pilot", "Engage " + interest.partners + " and the IBM Quantum Network."),
+        mission("skill", "Close skills gaps", "Upskill the team via structured quantum learning."),
+        mission("industry", "Partner & pilot", "Engage " + interest.partners + " and the industry quantum network."),
         mission("project", "Run a pilot project", "Prototype " + interest.project + " with the team."),
         mission("outcome", goal.outcome, "A prioritized, resourced enterprise quantum plan.")
       ];
@@ -416,7 +411,7 @@
     return [
       mission("start", avatar.start, "Define your quantum workforce need in " + interest.label + "."),
       mission("mission", "Translate roles into skills", "Map target jobs to concrete skills and role families."),
-      mission("community", "Partner with universities", "Connect with programs and the IBM Quantum Network."),
+      mission("community", "Partner with universities", "Connect with programs and the industry quantum network."),
       mission("project", "Sponsor projects & capstones", "Fund " + interest.project + " as real-world experience."),
       mission("industry", "Offer internships & apprenticeships", "Create hands-on, project-based pathways."),
       mission("mentor", "Provide mentors & reviewers", "Guide talent with technical reviewers."),
@@ -428,9 +423,9 @@
   function communityNodes(avatar, interest, goal) {
     return [
       mission("start", avatar.start, "Identify your local audience and goals."),
-      mission("skill", "Point members to IBM Quantum Learning", "Build shared foundations."),
-      mission("community", "Host Qiskit Fall Fest", "Turn curiosity into a community entry point."),
-      mission("mentor", "Recruit student advocates", "Activate Qiskit Advocates to lead locally."),
+      mission("skill", "Point members to structured quantum learning", "Build shared foundations."),
+      mission("community", "Host a local quantum program", "Turn curiosity into a community entry point."),
+      mission("mentor", "Recruit student mentors", "Activate learners who can lead locally."),
       mission("project", "Run project nights", "Build " + interest.project + " together."),
       mission("industry", "Connect to Network & employers", "Link members to " + interest.partners + "."),
       mission("outcome", goal.outcome, "A thriving local quantum community & pipeline.")
@@ -438,13 +433,13 @@
   }
 
   function resourceNamesFor(goal, fam) {
-    const base = ["IBM Quantum Learning", "IBM Quantum Composer", "Qiskit"];
-    if (goal.gate === "research") base.push("IBM Quantum Network", "IBM Research");
-    else if (goal.gate === "industry") base.push("IBM Quantum Network", "IBM Quantum Careers");
-    else if (goal.gate === "enterprise") base.push("IBM Quantum Case Studies", "IBM Quantum Network");
-    else if (goal.gate === "university") base.push("Classroom Accounts", "Qiskit Fall Fest");
-    else if (goal.gate === "community") base.push("Qiskit Advocates", "Qiskit Global Summer School");
-    else base.push("IBM Quantum Ecosystem Projects");
+    const base = ["QGG Classroom", "QGG Playground", "Qiskit"];
+    if (goal.gate === "research") base.push("QGG GitHub", "research labs");
+    else if (goal.gate === "industry") base.push("QGG Playground", "Quantum careers");
+    else if (goal.gate === "enterprise") base.push("Start a conversation", "QGG Playground");
+    else if (goal.gate === "university") base.push("QGG Classroom", "campus quantum program");
+    else if (goal.gate === "community") base.push("QGG Classroom", "local quantum program");
+    else base.push("QGG GitHub");
     return dedupe(base);
   }
   function dedupe(arr) { return arr.filter((v, i) => arr.indexOf(v) === i); }
@@ -514,7 +509,7 @@
 
     const firstSkill = result.nodes.find((n) => n.kind === "skill");
     $("#nextActionText").textContent =
-      (firstSkill ? firstSkill.title : "Start IBM Quantum Learning foundations") +
+      (firstSkill ? firstSkill.title : "Start structured quantum learning foundations") +
       ", then build " + interest.project + " before engaging " + interest.partners + ".";
     $("#nextAction").classList.add("is-live");
   }
@@ -583,7 +578,7 @@
       `<div class="mapper-grid">` +
       mapperBlock("Example jobs", tagRow(f.examples)) +
       mapperBlock("Core skills", tagRow(f.skills)) +
-      mapperBlock("IBM learning resources", bulletList(f.learning)) +
+      mapperBlock("Learning resources", bulletList(f.learning)) +
       mapperBlock("Suggested badges", tagRow(f.badges)) +
       mapperBlock("Suggested projects", bulletList(f.projects)) +
       mapperBlock("Opportunities", tagRow(f.opportunities)) +

@@ -11,7 +11,7 @@ export default function LearnHomePage() {
       <LearnPageHeader
         eyebrow="Quantum Readiness Month · Workforce development"
         title="Find Your Pathway Into Quantum"
-        subtitle="Start with where you fit, understand your readiness, build the fundamentals, and turn what you learn into something real."
+        subtitle="Start with where you fit, learn the fundamentals, then turn what you learn into something real."
         showJourney
       >
         <LearnButton href="/learn/navigator">Find My Quantum Path</LearnButton>
@@ -23,9 +23,9 @@ export default function LearnHomePage() {
       <section id="journey" className="space-y-6">
         <SectionHeader
           title="Your guided path"
-          description="One progression — not four separate tools. New here? Start with the Career Navigator."
+          description="One progression. New here? Start with the Career Navigator."
         />
-        <div className="grid gap-4 md:grid-cols-2">
+        <div className="grid gap-4 md:grid-cols-3">
           <ProgramStageCard
             step="01"
             title="Quantum Career Navigator"
@@ -36,20 +36,13 @@ export default function LearnHomePage() {
           />
           <ProgramStageCard
             step="02"
-            title="Quantum Readiness Track"
-            description="Map the expertise you already have to a practical quantum workforce pathway."
-            cta="Check My Readiness"
-            href="/learn/readiness"
-          />
-          <ProgramStageCard
-            step="03"
             title="Quantum Classroom"
             description="Learn the concepts, tools, and fundamentals connected to your pathway."
             cta="Start Learning"
             href="/learn/classroom"
           />
           <ProgramStageCard
-            step="04"
+            step="03"
             title="Portfolio Lab"
             description="Apply your learning through projects, case studies, and portfolio-ready work."
             cta="Build Something"
@@ -79,7 +72,7 @@ export default function LearnHomePage() {
               <a href="/learn/navigator" className="text-ql-primary">
                 Quantum Career Navigator
               </a>
-              , then continue with Readiness, Classroom, and Portfolio Lab.
+              , then continue with Classroom and Portfolio Lab.
             </dd>
           </div>
         </dl>
@@ -134,8 +127,8 @@ export default function LearnHomePage() {
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <LearnButton href="/learn/navigator">Find My Quantum Path</LearnButton>
-          <LearnButton href="/learn/readiness" variant="secondary">
-            Check My Readiness
+          <LearnButton href="/learn/classroom" variant="secondary">
+            Start Learning
           </LearnButton>
         </div>
       </section>

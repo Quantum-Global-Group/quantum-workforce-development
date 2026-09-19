@@ -17,7 +17,7 @@ describe("curriculum catalog", () => {
 
   it("resolves each slug and names the intended partners", () => {
     expect(courseBySlug("qubit-fundamentals")?.partner).toMatch(/Qolour/);
-    expect(courseBySlug("business-foundations")?.partner).toMatch(/IBM/);
+    expect(courseBySlug("business-foundations")?.partner).toMatch(/Quantum Global Group/);
     expect(courseBySlug("missing")).toBeUndefined();
   });
 

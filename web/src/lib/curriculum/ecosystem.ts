@@ -12,9 +12,9 @@ export const NAVIGATION_REPO = {
 /** In-site copy (same SPA). Use this on the QGG /learn chrome. */
 export const NAVIGATOR_HREF = "/learn/navigator" as const;
 
-/** Encoded from Quantum Global Group “IBM Quantum Ecosystem Navigation Framework” one-pager. */
+/** Encoded from Quantum Global Group ecosystem navigation one-pager. */
 export const ECOSYSTEM_PATHWAY = {
-  title: "IBM Quantum Ecosystem Navigation Framework",
+  title: "Quantum Ecosystem Navigation",
   goal: "Help learners, universities, and employers navigate the quantum ecosystem from curiosity to contribution.",
   source: "docs/curriculum/references/Quantum_Ecosystem_Pathway_OnePager.pptx",
   repo: NAVIGATION_REPO.href,
@@ -25,17 +25,17 @@ export const ECOSYSTEM_STEPS = [
   {
     id: "interests",
     title: "Start with interests",
-    body: "Name the subject you already care about — medicine, finance, music, logistics, security — before you pick a quantum job title. The Career Navigator does this first; the eight-pathway quiz is the WISER-aligned complement.",
+    body: "Name the subject you already care about — medicine, finance, music, logistics, security — before you pick a quantum job title. The Career Navigator does this first; the eight-pathway quiz is the shorter complement.",
   },
   {
     id: "learn",
-    title: "IBM Learning + Composer + Qiskit",
-    body: "Build literacy on IBM Quantum Learning, play in Composer, then write circuits in Qiskit. Classroom Accounts let a whole cohort touch real hardware without student credit cards.",
+    title: "Learn, compose, code",
+    body: "Build literacy with structured lessons, play with circuits in the browser, then write them in Qiskit. Classroom access lets a whole cohort touch real hardware without student credit cards.",
   },
   {
     id: "choose",
     title: "Choose a path",
-    body: "University path (MS/PhD, faculty, research labs) or industry path (internships, IBM Quantum Network, employment). Most working professionals in this month take the industry path and keep the university path as a later option.",
+    body: "University path (MS/PhD, faculty, research labs) or industry path (internships, partner companies, employment). Most working professionals in this month take the industry path and keep the university path as a later option.",
   },
   {
     id: "contribute",
@@ -46,13 +46,13 @@ export const ECOSYSTEM_STEPS = [
 
 export const UNIVERSITY_PATH = [
   "MS / PhD in physics, CS, EE, or a domain + quantum minor",
-  "Faculty and teaching (IBM Classroom Account)",
+  "Faculty and teaching (Classroom hardware access)",
   "Research labs and national-lab internships",
 ] as const;
 
 export const INDUSTRY_PATH = [
   "Internships and apprenticeships (including Quantum Ready pre-apprenticeship models)",
-  "IBM Quantum Network member companies",
+  "Industry quantum partner companies",
   "Employment in software, applications, security, or program roles",
 ] as const;
 
@@ -66,6 +66,6 @@ export const PATHWAY_TO_ECOSYSTEM: Record<
   hardware: { fork: "university", note: "Lab time and often a graduate degree; internships at hardware vendors." },
   security: { fork: "industry", note: "PQC programs live in enterprises and government, not only in physics departments." },
   sensing: { fork: "either", note: "Instrumentation employers and national labs both hire." },
-  business: { fork: "industry", note: "IBM Network, strategy, and workforce orgs." },
+  business: { fork: "industry", note: "Industry partners, strategy, and workforce orgs." },
   education: { fork: "either", note: "Teach in universities or run nonprofit / Advocate community programs." },
 };

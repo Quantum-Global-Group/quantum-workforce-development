@@ -9,12 +9,8 @@ import JourneyProgress from "./JourneyProgress";
 const NAV = [
   { href: "/learn", label: "Program" },
   { href: "/learn/navigator", label: "Navigator", staticPage: true, emphasize: true },
-  { href: "/learn/readiness", label: "Readiness" },
   { href: "/learn/classroom", label: "Classroom" },
-  { href: "/learn/roles", label: "Roles" },
-  { href: "/learn/courses", label: "Courses" },
   { href: "/dashboard", label: "Portfolio Lab" },
-  { href: "/learn/next", label: "Next Steps" },
 ];
 
 export default function LearnShell({ children }: { children: ReactNode }) {
@@ -81,11 +77,17 @@ export default function LearnShell({ children }: { children: ReactNode }) {
             <a href="/learn/navigator" className="text-ql-on-surface-variant no-underline hover:text-ql-primary">
               Navigator
             </a>
-            <Link href="/learn/readiness" className="text-ql-on-surface-variant no-underline hover:text-ql-primary">
-              Readiness
-            </Link>
             <Link href="/learn/classroom" className="text-ql-on-surface-variant no-underline hover:text-ql-primary">
               Classroom
+            </Link>
+            <Link href="/learn/roles" className="text-ql-on-surface-variant no-underline hover:text-ql-primary">
+              Roles
+            </Link>
+            <Link href="/learn/courses" className="text-ql-on-surface-variant no-underline hover:text-ql-primary">
+              Courses
+            </Link>
+            <Link href="/learn/next" className="text-ql-on-surface-variant no-underline hover:text-ql-primary">
+              Next steps
             </Link>
             <a
               href="https://www.quantumglobalgroup.io/"

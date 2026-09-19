@@ -56,7 +56,7 @@ export const PATHWAYS: Record<PathwayId, Pathway> = {
       "Technical writing",
     ],
     monthEmphasis:
-      "Treat IBM Business Foundations as product context, then use the Portfolio Lab in week 4 as a real hybrid workflow to instrument, reproduce, and explain.",
+      "Treat Business Foundations as product context, then use the Portfolio Lab in week 4 as a real hybrid workflow to instrument, reproduce, and explain.",
   },
   hardware: {
     id: "hardware",
@@ -102,7 +102,7 @@ export const PATHWAYS: Record<PathwayId, Pathway> = {
       "Technical communication",
     ],
     monthEmphasis:
-      "Keep Qolour entanglement / no-cloning intuition, then use IBM Business Foundations to frame organizational readiness and PQC as a parallel track to compute.",
+      "Keep Qolour entanglement / no-cloning intuition, then use Business Foundations to frame organizational readiness and PQC as a parallel track to compute.",
   },
   sensing: {
     id: "sensing",
@@ -148,7 +148,7 @@ export const PATHWAYS: Record<PathwayId, Pathway> = {
       "Ethics and governance",
     ],
     monthEmphasis:
-      "The IBM Quantum Business Foundations badge is the week-3 centerpiece; week 4 teaches you to demand a classical baseline before anyone claims quantum advantage.",
+      "The Business Foundations week is the week-3 centerpiece; week 4 teaches you to demand a classical baseline before anyone claims quantum advantage.",
   },
   education: {
     id: "education",

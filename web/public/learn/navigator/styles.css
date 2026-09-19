@@ -1,13 +1,15 @@
 /* ====================================================================
    Quantum Career Navigator
-   IBM Quantum–inspired workforce navigation tool
-   Palette: IBM blue / purple / magenta / cyan / charcoal / light gray
+   QGG Career Navigator
+   Palette: navy / blue / charcoal / light gray
    Type: IBM Plex Sans + IBM Plex Mono
    ==================================================================== */
 
 :root {
-  --ibm-blue: #0f62fe;
-  --ibm-blue-hover: #0043ce;
+  --qgg-blue: #0f62fe;
+  --qgg-blue-hover: #0043ce;
+  --ibm-blue: var(--qgg-blue);
+  --ibm-blue-hover: var(--qgg-blue-hover);
   --purple: #8a3ffc;
   --purple-deep: #6929c4;
   --magenta: #ee5396;
@@ -97,7 +99,11 @@ a:hover { color: var(--ibm-blue-hover); text-decoration: underline; }
   line-height: 1.6;
 }
 
-/* IBM hardware bird watermarks disabled — QGG public identity */
+.public-hide {
+  display: none !important;
+}
+
+/* Hardware bird watermarks disabled — QGG public identity */
 .bird-bg { position: relative; isolation: isolate; overflow: hidden; }
 .bird-bg::after {
   content: none;

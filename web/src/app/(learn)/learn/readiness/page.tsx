@@ -7,9 +7,9 @@ export default function ReadinessPage() {
   return (
     <div className="space-y-10">
       <LearnPageHeader
-        eyebrow="02 · Readiness"
+        eyebrow="Optional · Skills check"
         title="Quantum Readiness Track"
-        subtitle="Map the expertise you already have to a practical quantum workforce pathway. This is not a personality quiz and it is not a hiring test."
+        subtitle="A shorter skills-focused complement to the Career Navigator. Most learners can skip this and go straight to Classroom."
         showJourney
       >
         <LearnButton href={NAVIGATOR_HREF} variant="secondary">
