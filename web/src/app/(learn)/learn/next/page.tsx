@@ -118,14 +118,8 @@ export default function NextPage() {
           <a href="https://www.ibm.com/quantum/blog/qiskit-advocate-program" className="text-ql-primary">
             Advocate program
           </a>
-          . This cohort uses an approved{" "}
-          <a
-            href="https://quantum.cloud.ibm.com/docs/en/guides/classroom-accounts"
-            className="text-ql-primary"
-          >
-            IBM Quantum Classroom Account
-          </a>{" "}
-          so you can run on hardware without a student credit card.
+          . This cohort uses Classroom hardware access so you can run on a QPU without a student
+          credit card.
         </p>
         <div className="overflow-x-auto rounded-xl border border-ql-outline-variant">
           <table className="w-full min-w-[32rem] text-left text-sm">
@@ -148,8 +142,8 @@ export default function NextPage() {
           </table>
         </div>
         <p className="text-xs text-ql-on-surface-variant">
-          Objectives summarized from IBM’s C1000-179 study guide for facilitator planning. Take the
-          exam on IBM / Pearson — we do not host IBM’s PDF on the public site.
+          Practice objectives from the Qiskit Advocate cert study guide built for this cohort. Take
+          the exam on IBM / Pearson — we do not host IBM’s PDF on the public site.
         </p>
       </section>
 

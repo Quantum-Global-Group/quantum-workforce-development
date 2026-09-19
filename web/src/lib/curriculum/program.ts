@@ -19,13 +19,13 @@ export const COURSES: Course[] = [
     subtitle: "Subject-matter expertise first. Job titles second.",
     partner: "Quantum Global Group",
     hours: "6–8 hours",
-    format: "Career Navigator, WISER-aligned quiz, live orientation, personal learning plan",
+    format: "Career Navigator, Readiness Track, live orientation, personal learning plan",
     summary:
-      "Most people meet quantum as a wall of physics. This course starts the other way: what you already know, how that knowledge shows up in the quantum ecosystem, and which pathway is the honest next step. The Career Navigator on this site is the primary lab; the eight-pathway Readiness Track is the WISER-aligned complement.",
+      "Most people meet quantum as a wall of physics. This course starts the other way: what you already know, how that knowledge shows up in the quantum ecosystem, and which pathway is the honest next step. The Career Navigator is the primary lab; the eight-pathway Readiness Track is the shorter complement.",
     whyThisWeek:
       "Workforce programs fail when everyone is treated as a future algorithm researcher. Week 1 names the real roles — applied SME, software, hardware, security, sensing, business, education, algorithms — so the rest of the month has a reason.",
     learningOutcomes: [
-      "Locate yourself on the Quantum Global Group / WISER-aligned pathway map using current expertise, not aspiration alone.",
+      "Locate yourself on the Quantum Global Group pathway map using current expertise, not aspiration alone.",
       "Distinguish quantum computing, sensing, communications/security, and enabling software/hardware roles.",
       "Write a one-page learning plan that states a target pathway, a stretch pathway, and a non-goal.",
       "Explain, in plain language, why the quantum workforce cannot be built by PhDs alone.",
@@ -48,7 +48,7 @@ export const COURSES: Course[] = [
         duration: "60–90 min",
         outcomes: [
           "Generate a board-game pathway from profile, interest, and goal.",
-          "Name a role family, a next-best action, and one IBM learning asset.",
+          "Name a role family, a next-best action, and one learning resource to start with.",
         ],
         activities: [
           "Complete /learn/navigator (optional ?demo=1 loads the example student).",
@@ -58,7 +58,7 @@ export const COURSES: Course[] = [
         ],
       },
       {
-        title: "WISER-aligned Readiness Track (complement)",
+        title: "Readiness Track (complement)",
         duration: "30–45 min",
         outcomes: [
           "Complete the eight-pathway SME-fit assessment.",
@@ -66,7 +66,7 @@ export const COURSES: Course[] = [
         ],
         activities: [
           "Complete /learn/readiness.",
-          "Note where the Navigator role family and the WISER pathway agree or diverge.",
+          "Note where the Navigator role family and the Readiness pathway agree or diverge.",
         ],
       },
       {
@@ -144,7 +144,7 @@ export const COURSES: Course[] = [
           "Qubi course: 3.1, 3.3, 3.4 plus gate explainers (H, X, Z, CNOT, measurement).",
           "IQM circuit-magicians cheat sheet (CC-BY-SA) as the gate wall chart.",
           "Quantum Enigmas 001 (treasure door) or Black Opal Circuits module.",
-          "Optional: run the same tiny circuit on IBM hardware via the Classroom Account.",
+          "Optional: run the same tiny circuit on real hardware via Classroom access.",
         ],
       },
     ],
@@ -159,18 +159,18 @@ export const COURSES: Course[] = [
     code: "QR-3",
     title: "Quantum Business Foundations",
     subtitle: "Where the technology actually sits in industry — and how to become quantum ready.",
-    partner: "IBM Quantum",
+    partner: "Quantum Global Group",
     partnerUrl: "https://quantum.cloud.ibm.com/learning/courses/quantum-business-foundations",
-    hours: "6–8 hours (IBM course is ~2–3 hours of core content; we add application)",
-    format: "IBM Quantum Business Foundations + cohort seminar + use-case memo",
+    hours: "6–8 hours (core lessons ~2–3 hours; we add application)",
+    format: "Business foundations + cohort seminar + use-case memo",
     summary:
-      "IBM’s Quantum Business Foundations course is the cleanest public map of the paradigm, the hardware/software stack, industry applications, and organizational readiness. We do not rewrite it. We teach it, then force a written judgment: what is a good use case for your domain, and what is a poor one.",
+      "Week 3 maps the paradigm, the hardware/software stack, industry applications, and organizational readiness. We force a written judgment: what is a good use case for your domain, and what is a poor one.",
     whyThisWeek:
-      "After qubit intuition, people need the market and the org chart. IBM’s badge also gives the cohort a portable credential that hiring managers already recognize.",
+      "After qubit intuition, people need the market and the org chart — plus a portable way to talk about readiness with employers.",
     learningOutcomes: [
       "Describe the current state of quantum computing without over-claiming advantage.",
       "Identify industries and problem types where quantum is being explored (including financial services).",
-      "Explain IBM’s three readiness levers: talent, use cases, and protecting against quantum threats.",
+      "Explain three readiness levers: talent, use cases, and protecting against quantum threats.",
       "Evaluate a candidate use case as good, premature, or the wrong problem.",
     ],
     modules: [
@@ -178,20 +178,20 @@ export const COURSES: Course[] = [
         title: "Start the journey and the computing paradigm",
         duration: "2 hours",
         outcomes: [
-          "Complete IBM lessons: Start your quantum journey; Introduction to quantum computing.",
+          "Complete lessons: Start your quantum journey; Introduction to quantum computing.",
           "Restate why quantum will not replace classical computers.",
         ],
-        activities: ["IBM course modules 1–2.", "Journal: one claim you will stop repeating."],
+        activities: ["Course modules 1–2.", "Journal: one claim you will stop repeating."],
       },
       {
         title: "Fundamentals, technology, and business impact",
         duration: "2–3 hours",
         outcomes: [
-          "Connect week-2 qubit language to IBM’s technology lesson.",
+          "Connect week-2 qubit language to the technology lesson.",
           "Name two industry applications relevant to your SME.",
         ],
         activities: [
-          "IBM lessons: Quantum computing fundamentals; Quantum technology; Business impacts.",
+          "Lessons: Quantum computing fundamentals; Quantum technology; Business impacts.",
           "Seminar: financial services, optimization, chemistry — what is real now.",
           "Security-track add-on: PQC vs QKD one-pager (QRC Module 4).",
           "Optional: one Quantum Enigma video + SkillsBuild quiz.",
@@ -201,18 +201,18 @@ export const COURSES: Course[] = [
         title: "How to become quantum ready + badge exam",
         duration: "2 hours",
         outcomes: [
-          "Map strategy, technology, and operations capabilities from the IBM readiness lesson.",
-          "Sit the IBM Training exam (optional but strongly encouraged).",
+          "Map strategy, technology, and operations capabilities from the readiness lesson.",
+          "Sit the optional partner exam if you want the portable badge.",
         ],
         activities: [
-          "IBM lesson: How to become quantum ready.",
+          "Lesson: How to become quantum ready.",
           "Write a 400-word use-case memo for your organization or a chosen sector.",
-          "Exam at IBM Training for the Credly badge.",
+          "Optional partner exam for the Credly badge.",
         ],
       },
     ],
     deliverable:
-      "Use-case memo (good choice vs poor choice) plus, when passed, the IBM Quantum Business Foundations badge.",
+      "Use-case memo (good choice vs poor choice) plus, when passed, the optional Business Foundations badge.",
     assessment:
       "Memo rubric (strategic importance, scalability, hybrid near-term path, honesty about hardware limits). Badge is recorded but not required to pass the month if the memo is strong.",
   },

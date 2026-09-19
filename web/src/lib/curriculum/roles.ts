@@ -37,14 +37,14 @@ export const ROLE_FAMILIES: RoleFamily[] = [
     typicalBackground: "Working professional in the domain; quantum layered on top.",
     phdRequired: "rarely",
     employers: [
-      { name: "IBM Quantum Network members", why: "Client-facing use-case workshops" },
+      { name: "Industry quantum network members", why: "Client-facing use-case workshops" },
       { name: "JPMorgan / Goldman Sachs quantum groups", why: "Portfolio, risk, and optimization research" },
       { name: "Consulting and innovation labs", why: "Translation between business and algorithms" },
       { name: "Startups in optimization / chemistry SaaS", why: "Domain + hybrid workflow" },
     ],
     boards: [
       { label: "Quantum Jobs USA", href: "https://www.quantumjobs.us/" },
-      { label: "IBM Careers — quantum", href: "https://www.ibm.com/careers/search?field_keyword_05=203604" },
+      { label: "Quantum careers", href: "https://www.ibm.com/careers/search?field_keyword_05=203604" },
     ],
   },
   {
@@ -67,7 +67,7 @@ export const ROLE_FAMILIES: RoleFamily[] = [
     typicalBackground: "CS, physics, math, or quantitative research.",
     phdRequired: "sometimes",
     employers: [
-      { name: "IBM Quantum", why: "Algorithms, Qiskit, Runtime primitives" },
+      { name: "Quantum algorithm groups", why: "Algorithms, Qiskit, Runtime primitives" },
       { name: "Quantinuum", why: "Algorithms and chemistry/optimization" },
       { name: "Xanadu", why: "PennyLane and FTQC software" },
       { name: "National labs", why: "Research software on HPC + QPU" },
@@ -90,14 +90,14 @@ export const ROLE_FAMILIES: RoleFamily[] = [
     skills: [
       "Production Python (often C++/Rust)",
       "CI/CD, testing, code review",
-      "Cloud (IBM Quantum Platform, Braket, Azure)",
+      "Cloud (quantum platforms, Braket, Azure)",
       "Transpilation, OpenQASM, primitives",
       "Technical writing",
     ],
     typicalBackground: "Software engineer moving into quantum; PhD not the ticket.",
     phdRequired: "rarely",
     employers: [
-      { name: "IBM", why: "Qiskit, Runtime, platform" },
+      { name: "Platform and SDK teams", why: "Qiskit, Runtime, cloud execution" },
       { name: "Amazon Braket / AWS", why: "Cloud quantum service layer" },
       { name: "Microsoft Azure Quantum", why: "Stack and developer tools" },
       { name: "IQM, Rigetti, IonQ", why: "Control software and cloud access" },
@@ -208,15 +208,15 @@ export const ROLE_FAMILIES: RoleFamily[] = [
       "Use-case evaluation",
       "Roadmapping and procurement",
       "Stakeholder communication",
-      "IBM Business Foundations-level literacy",
+      "Business-foundations literacy",
       "Ethics and governance",
     ],
     typicalBackground: "Product, strategy, policy, or investment; not a physicist.",
     phdRequired: "rarely",
     employers: [
-      { name: "IBM Quantum Network companies", why: "Internal quantum champions" },
+      { name: "Industry quantum programs", why: "Internal quantum champions" },
       { name: "VC / corporate venture", why: "Diligence on quantum startups" },
-      { name: "WISER-style workforce orgs", why: "Program design" },
+      { name: "Workforce development orgs", why: "Program design" },
       { name: "Government innovation offices", why: "Policy and regional strategy" },
     ],
     boards: [
@@ -244,9 +244,9 @@ export const ROLE_FAMILIES: RoleFamily[] = [
     phdRequired: "rarely",
     employers: [
       { name: "Universities and HBCUs", why: "Qiskit Fall Fest, classroom accounts" },
-      { name: "IBM Quantum Education", why: "Modules, advocates, events" },
+      { name: "Quantum education programs", why: "Modules, advocates, events" },
       { name: "Q-CTRL (Black Opal)", why: "Education platform" },
-      { name: "Nonprofits (WISER, CQC)", why: "Workforce programs" },
+      { name: "Nonprofits and regional collaboratives", why: "Workforce programs" },
     ],
     boards: [
       { label: "Qiskit Advocate program", href: "https://www.ibm.com/quantum/blog/qiskit-advocate-program" },

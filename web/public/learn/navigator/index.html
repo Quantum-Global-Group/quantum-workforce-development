@@ -16,7 +16,7 @@
   <div class="qgg-learn-bar">
     <a href="/learn">← Program home</a>
     <span class="qgg-learn-bar-label">01 · Navigator · Quantum Global Group</span>
-    <a href="/learn/readiness">Next: Readiness →</a>
+    <a href="/learn/classroom">Next: Classroom →</a>
   </div>
 
   <nav class="site-nav" aria-label="Quantum Career Navigator">
@@ -29,16 +29,13 @@
         <li><a href="#navigator">Navigator</a></li>
         <li><a href="#board">Pathway</a></li>
         <li><a href="#roles">Roles</a></li>
-        <li><a href="#forecast">Forecast</a></li>
-        <li><a href="#enterprise">Enterprise</a></li>
-        <li><a href="#kpis">Outcomes</a></li>
       </ul>
       <a class="nav-signin" href="https://quantum.cloud.ibm.com/" target="_blank" rel="noopener">Sign in to Platform</a>
     </div>
   </nav>
 
   <!-- 1 · HERO -->
-  <header class="hero bird-bg bird-bg--right bird-bg--nighthawk" id="top">
+  <header class="hero" id="top">
     <div class="hero-aurora" aria-hidden="true"></div>
     <div class="container hero-inner">
       <p class="hero-eyebrow">Quantum Global Group · Workforce Intelligence</p>
@@ -67,7 +64,7 @@
   </header>
 
   <!-- 2-5 · NAVIGATOR CONTROLS -->
-  <section class="navigator bird-bg bird-bg--left bird-bg--bluejay" id="navigator">
+  <section class="navigator" id="navigator">
     <div class="container">
       <div class="navigator-head">
         <p class="section-label">Build your journey</p>
@@ -141,7 +138,7 @@
         <!-- Pathway summary -->
         <div class="summary-panel" id="summaryPanel" hidden>
           <div class="summary-grid">
-            <div class="summary-item"><p class="summary-label">Recommended learning resources</p><div class="mini-tags" id="sumResources"></div></div>
+            <div class="summary-item"><p class="summary-label">Recommended QGG resources</p><div class="mini-tags" id="sumResources"></div></div>
             <div class="summary-item"><p class="summary-label">Required skills</p><div class="mini-tags" id="sumSkills"></div></div>
             <div class="summary-item"><p class="summary-label">Suggested badges &amp; credentials</p><div class="mini-tags" id="sumBadges"></div></div>
             <div class="summary-item"><p class="summary-label">Suggested projects</p><div class="mini-tags" id="sumProjects"></div></div>
@@ -166,11 +163,11 @@
   </section>
 
   <!-- 7 · ROLE FAMILIES -->
-  <section class="roles bird-bg bird-bg--right bird-bg--starling" id="roles">
+  <section class="roles" id="roles">
     <div class="container">
       <p class="section-label">Role families</p>
       <h2 class="section-title">Quantum role families</h2>
-      <p class="section-desc">Representative quantum roles organized into six families — each with core skills and a learning pathway that lead into it. This connects learning to real jobs.</p>
+      <p class="section-desc">Representative quantum roles organized into six families — each with core skills and a learning pathway. This connects QGG learning to real jobs.</p>
       <div class="family-grid" id="familyGrid"></div>
     </div>
   </section>
@@ -186,8 +183,8 @@
     </div>
   </section>
 
-  <!-- 9 · WORKFORCE FORECAST -->
-  <section class="forecast bird-bg bird-bg--left bird-bg--falcon" id="forecast">
+  <!-- 9 · WORKFORCE FORECAST (kept in DOM for the engine; hidden from the public learner path) -->
+  <section class="forecast public-hide" id="forecast" hidden>
     <div class="container">
       <p class="section-label">Connect the roadmap to readiness</p>
       <h2 class="section-title">1 · 2 · 3-year quantum workforce forecast</h2>
@@ -196,8 +193,7 @@
     </div>
   </section>
 
-  <!-- 10 · ENTERPRISE READINESS -->
-  <section class="enterprise bird-bg bird-bg--right bird-bg--heron" id="enterprise">
+  <section class="enterprise public-hide" id="enterprise" hidden>
     <div class="container">
       <p class="section-label">For companies</p>
       <h2 class="section-title">Enterprise quantum readiness assessment</h2>
@@ -217,8 +213,7 @@
     </div>
   </section>
 
-  <!-- 11 · QUANTUM TEAM BUILDER -->
-  <section class="team" id="team">
+  <section class="team public-hide" id="team" hidden>
     <div class="container">
       <p class="section-label">Quantum work is team-based</p>
       <h2 class="section-title">Build the quantum team</h2>
@@ -230,8 +225,7 @@
     </div>
   </section>
 
-  <!-- 12 · UNIVERSITY CURRICULUM BUILDER -->
-  <section class="curriculum bird-bg bird-bg--left bird-bg--eagle" id="curriculum">
+  <section class="curriculum public-hide" id="curriculum" hidden>
     <div class="container">
       <p class="section-label">For universities</p>
       <h2 class="section-title">University quantum pathway builder</h2>
@@ -241,19 +235,18 @@
     </div>
   </section>
 
-  <!-- 13 · IBM ASSETS AS POWER-UPS -->
+  <!-- 13 · LEARNING RESOURCES -->
   <section class="assets" id="assets">
     <div class="container">
-      <p class="section-label">Power-ups on the board</p>
-      <h2 class="section-title">Quantum learning resources</h2>
-      <p class="section-desc">Learning resources (including partner platforms such as IBM Quantum Learning) act as unlockable assets — showing what they help with, the pathway stage they support, and the role families they feed.</p>
+      <p class="section-label">Resources</p>
+      <h2 class="section-title">QGG learning resources</h2>
+      <p class="section-desc">These are the QUANTUM GLOBAL GROUP starting points — Classroom, Playground, GitHub, and hardware access when you need it.</p>
       <div class="purpose-filter" id="purposeFilter" aria-label="Filter assets by purpose"></div>
       <div class="asset-grid" id="assetGrid"></div>
     </div>
   </section>
 
-  <!-- 14 · KPI DASHBOARD -->
-  <section class="kpis" id="kpis">
+  <section class="kpis public-hide" id="kpis" hidden>
     <div class="container">
       <p class="section-label">Measure what matters</p>
       <h2 class="section-title">Workforce development outcomes</h2>
@@ -281,10 +274,10 @@
           pathways</strong> and <strong>measurable outcomes</strong>. It helps learners understand what to
           learn, universities understand what to build, and employers understand what talent they need.
         </p>
-        <p class="final-concept">Continue your journey on Quantum Global Group: check readiness, learn in the Classroom, then apply skills in Portfolio Lab.</p>
+        <p class="final-concept">Continue on Quantum Global Group: learn in the Classroom, then apply skills in Portfolio Lab.</p>
         <div class="final-actions">
-          <a class="btn-primary" href="/learn/readiness">Check Your Readiness</a>
-          <a class="btn-secondary" href="/learn/classroom">Explore Quantum Classroom</a>
+          <a class="btn-primary" href="/learn/classroom">Explore Quantum Classroom</a>
+          <a class="btn-secondary" href="/dashboard">Open Portfolio Lab</a>
         </div>
       </div>
     </div>
@@ -298,15 +291,15 @@
       </div>
       <div class="footer-col">
         <strong>Learn</strong>
-        <a href="https://quantum.cloud.ibm.com/learning/en" target="_blank" rel="noopener">IBM Quantum Learning</a>
-        <a href="https://quantum.cloud.ibm.com/learning/en/courses" target="_blank" rel="noopener">Courses</a>
-        <a href="https://www.ibm.com/quantum/blog/qiskit-summer-school-2026" target="_blank" rel="noopener">Qiskit Global Summer School</a>
+        <a href="/learn">Program home</a>
+        <a href="/learn/classroom">Classroom</a>
+        <a href="/dashboard">Portfolio Lab</a>
       </div>
       <div class="footer-col">
-        <strong>Connect</strong>
-        <a href="https://www.ibm.com/quantum/ibm-quantum-network" target="_blank" rel="noopener">IBM Quantum Network</a>
-        <a href="https://www.ibm.com/quantum/ecosystem" target="_blank" rel="noopener">Qiskit Ecosystem</a>
-        <a href="https://www.ibm.com/quantum/case-studies" target="_blank" rel="noopener">Case studies</a>
+        <strong>Quantum Global Group</strong>
+        <a href="https://www.quantumglobalgroup.io/">Main site</a>
+        <a href="https://github.com/Quantum-Global-Group">GitHub</a>
+        <a href="/dashboard">Portfolio Lab</a>
       </div>
     </div>
     <p class="footer-copy">© Quantum Global Group · Quantum Career Navigator</p>

@@ -187,7 +187,7 @@ export const GLOSSARY: GlossaryEntry[] = [
     shortDef: "Quantum Approximate Optimization Algorithm: a variational circuit for combinatorial problems, usually from an Ising / QUBO cost.",
     fullDef:
       "QAOA alternates cost and mixer unitaries, with parameters tuned classically. It is a hybrid algorithm. Depth p, parameter training, and the quality of the QUBO encoding dominate results. It is not a magic replacement for Gurobi.",
-    whyItMatters: "Appears in the Portfolio Lab and in IBM-adjacent application stories. Learners should know it is variational and hybrid.",
+    whyItMatters: "Appears in the Portfolio Lab and in application stories. Learners should know it is variational and hybrid.",
     related: ["QUBO", "VQE", "Hybrid algorithm"],
     courseSlugs: ["vocabulary-and-baseline", "business-foundations"],
   },
@@ -196,7 +196,7 @@ export const GLOSSARY: GlossaryEntry[] = [
     shortDef: "Variational Quantum Eigensolver: a hybrid method that uses a parameterized circuit and a classical optimizer to estimate an energy / cost.",
     fullDef:
       "VQE was designed for chemistry Hamiltonians and is also used as a variational cost minimizer in other encodings. The ansatz, optimizer, and shot noise determine whether you are doing science or fitting a random landscape.",
-    whyItMatters: "IBM Runtime paths in this repo use VQE-shaped workflows. The cohort should not confuse “we ran VQE” with “we beat classical.”",
+    whyItMatters: "Hardware paths in this repo use VQE-shaped workflows. The cohort should not confuse “we ran VQE” with “we beat classical.”",
     related: ["Hybrid algorithm", "Ansatz", "QAOA"],
     courseSlugs: ["vocabulary-and-baseline"],
   },
@@ -205,7 +205,7 @@ export const GLOSSARY: GlossaryEntry[] = [
     shortDef: "A loop that uses both classical and quantum (or quantum-inspired) pieces, each doing what it is good at.",
     fullDef:
       "Almost all near-term application work is hybrid: classical data prep, encoding, parameter updates, and post-processing around a quantum or quantum-inspired kernel. “Hybrid” is not a dodge; it is the architecture.",
-    whyItMatters: "IBM Business Foundations and this lab agree: quantum will not replace classical computers.",
+    whyItMatters: "Business Foundations and this lab agree: quantum will not replace classical computers.",
     related: ["VQE", "QAOA", "Classical baseline"],
     courseSlugs: ["business-foundations", "vocabulary-and-baseline"],
   },
@@ -213,7 +213,7 @@ export const GLOSSARY: GlossaryEntry[] = [
     term: "Quantum readiness",
     shortDef: "A moving measure of whether a person or organization can use quantum technology and respond to quantum-era risk — not a certificate you hang once.",
     fullDef:
-      "IBM describes organizational quantum readiness across strategy, technology, and operations: talent, use-case skill, hybrid architecture, governance, and protection against quantum threats. For a person, this month treats readiness as: know your fit, share the vocabulary, hold qubit intuition, and refuse results without a baseline.",
+      "Organizational quantum readiness spans strategy, technology, and operations: talent, use-case skill, hybrid architecture, governance, and protection against quantum threats. For a person, this month treats readiness as: know your fit, share the vocabulary, hold qubit intuition, and refuse results without a baseline.",
     whyItMatters: "It is the name of the program. It is not a synonym for “we bought a time on a QPU.”",
     related: ["Use case", "Post-quantum cryptography"],
     courseSlugs: ["quantum-readiness", "business-foundations"],
@@ -222,7 +222,7 @@ export const GLOSSARY: GlossaryEntry[] = [
     term: "Use case",
     shortDef: "A specific problem, owner, data, and success metric — not an industry name on a slide.",
     fullDef:
-      "IBM’s course distinguishes good use cases (strategic, scalable, explorably small, hybrid-near-term) from poor ones (mission-critical bets on unproven theory, or problems that do not scale). A use case that cannot name a classical baseline is not ready for a quantum pilot.",
+      "Good use cases are strategic, scalable, explorably small, and hybrid-near-term. Poor ones are mission-critical bets on unproven theory, or problems that do not scale. A use case that cannot name a classical baseline is not ready for a quantum pilot.",
     whyItMatters: "Week 3 memo. If you cannot write it, you cannot fund it.",
     related: ["Quantum readiness", "Classical baseline"],
     courseSlugs: ["business-foundations", "quantum-readiness"],

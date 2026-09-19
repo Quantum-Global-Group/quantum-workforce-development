@@ -21,10 +21,25 @@ export default function ClassroomPage() {
       </LearnPageHeader>
 
       <p className="max-w-3xl text-sm text-ql-on-surface-variant">
-        Quantum Global Group uses partner platforms and open resources — including IBM Quantum Classroom
-        Accounts where applicable — so cohorts can run on real hardware without student credit cards.
-        Partner names appear on resources they provide; the learning journey is owned by Quantum Global Group.
+        Quantum Global Group uses partner platforms and open resources so cohorts can learn
+        hands-on fundamentals. Partner names appear only on resources they actually provide;
+        the learning journey is owned by Quantum Global Group.
       </p>
+
+      <section className="rounded-2xl border border-ql-primary/35 bg-ql-surface-low p-6 sm:p-8">
+        <SectionHeader
+          title="Run on real hardware"
+          description="QUANTUM GLOBAL GROUP provides hardware access for the cohort — QPU time without a student credit card. There is no public invite link: request access with your email and we will add you. If you already have access, sign in to the platform."
+        />
+        <div className="mt-6 flex flex-wrap gap-3">
+          <LearnButton href="https://www.quantumglobalgroup.io/#contact" variant="primary">
+            Request hardware access
+          </LearnButton>
+          <LearnButton href="https://quantum.cloud.ibm.com/" variant="secondary" external>
+            Sign in to Platform
+          </LearnButton>
+        </div>
+      </section>
 
       <section className="space-y-4">
         <SectionHeader
@@ -115,8 +130,8 @@ export default function ClassroomPage() {
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
           <LearnButton href="/dashboard">Apply What You Learned</LearnButton>
-          <LearnButton href="/learn/readiness" variant="secondary">
-            Return to Your Pathway
+          <LearnButton href="/learn/navigator" variant="secondary">
+            Return to Navigator
           </LearnButton>
         </div>
       </section>
